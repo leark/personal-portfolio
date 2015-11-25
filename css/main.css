@@ -1,0 +1,13 @@
+nav
+{
+	background-color: #181C22;
+	color: white;
+	font-size: 16px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	z-index: 9999;
+}

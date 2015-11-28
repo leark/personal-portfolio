@@ -2,28 +2,28 @@
     {
         "name": "Dawg Coffee",
         "url": "http://students.washington.edu/shl7/info343/dawg-coffee/",
-        "img": "../img/coffee",
+        "img": "img/coffee",
         "description": "In this project, I created a fake website for a fake coffee shop called Dawg Coffee. It contains operating hours, map, contact information, menu, and company story. It uses bootstrap to be responsive to mobile and desktop use.",
         "github": "https://github.com/leark/dawg-coffee"
     },
     {
         "name": "Police Shooting",
         "url": "http://students.washington.edu/shl7/info343/police-shooting/",
-        "img": "../img/police",
+        "img": "img/police",
         "description": "In this project, I created a map from crowdsourced police shooting data. The color of the circles indicate if the vicitm was hit or killed and users can click the circles for details. Users can also filter the data by clicking on the button to the top right of the map. It uses Leaflet map service.",
         "github": "https://github.com/leark/police-shooting"
     },
     {
         "name": "CRUD",
         "url": "http://students.washington.edu/shl7/info343/CRUD/",
-        "img": "../img/crud",
+        "img": "img/crud",
         "description": "In this project, I created a review system that looks like a 4chan post. User must log in to write reviews and like other people's reviews. User also has the power to delete their own review.",
         "github": "https://github.com/leark/CRUD"
     },
     {
         "name": "Spotify Challenge",
         "url": "http://students.washington.edu/shl7/info343/spotify-challenge/",
-        "img": "../img/spotify",
+        "img": "img/spotify",
         "description": "In this project, I created a song guessing game using Spotify's API. Users can log in using their Spotify account to guess form featured playlist or their own playlist. ",
         "github": "https://github.com/leark/spotify-challenge"
     }

@@ -35,7 +35,7 @@ myApp.controller("AboutController", function ($scope, $http) {
 myApp.controller("ProjectsController", function ($scope, $http) {
 	$http({
 		method: "GET",
-		url: "../data/data.json"
+		url: "data/data.json"
 	}).then(function successCallback(response) {
 		$scope.projects = response.data;
 	})	

@@ -1,18 +1,18 @@
 // Create app
 var myApp = angular.module("myApp", ["ui.router"]);
-// Configure app
 
+// Configure app
 myApp.config(function($stateProvider) {
 	$stateProvider
 		.state("home", {
-			url:'/',
+			url:'',
 			templateUrl: 'templates/home.html',
 			controller: 'HomeController'
 		})
-		.state("content", {
-			url:'/content',
-			templateUrl: 'templates/content.html',
-			controller: 'ContentController'
+		.state("projects", {
+			url:'/projects',
+			templateUrl: 'templates/projects.html',
+			controller: 'ProjectsController'
 		})
 		.state("about", {
 			url:'/about',
@@ -21,18 +21,23 @@ myApp.config(function($stateProvider) {
 		})
 })
 
-// Landing page controller: define $scope.number as a number
+// Landing page controller
 myApp.controller("HomeController", function ($scope, $http) {
-	$scope.number = 3;
+	$scope.home = "Hi you're viewing Seung's Portfolio website!";
 })
 
-// About page controller: define $scope.about as a string
+// About page controller
 myApp.controller("AboutController", function ($scope, $http) {
-	$scope.about = "this is about";
+	$scope.about = "My name is Seung Lee and I am an informatics major at the University of Washington.";
 })
 
-// Content controller: define $scope.url as an image
-myApp.controller("ContentController", function ($scope, $http) {
-	$scope.url = "img/simba.png";
+// Project controller. Pulls data from JSON file using GET
+myApp.controller("ProjectsController", function ($scope, $http) {
+	$http({
+		method: "GET",
+		url: "../data/data.json"
+	}).then(function successCallback(response) {
+		$scope.projects = response.data;
+	})	
 })
 

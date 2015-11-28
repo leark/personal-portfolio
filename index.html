@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Multipage Example</title>
+    <title>Seung's Portfolio</title>
     
     <!-- Libraries -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
@@ -22,20 +22,15 @@
   <body>
     <div>
       <header>
-	<nav>
-		<a href="#header">
-		<ul id="nav">
-			<li><a href="">Home</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="">Projects</a></li>
-			<li><a href="">Contact</a></li>
-		</ul>
-	</nav>        
-          <a class="btn btn-default" ui-sref="home">Home</a>
-          <a class="btn btn-default" ui-sref="content">Content</a>
-          <a class="btn btn-default" ui-sref="about">About</a>
+      	<nav>
+      		<a href="#header">
+      		<ul id="nav">
+      			<li><a ui-sref="home">Home</a></li>
+      			<li><a ui-sref="about">About</a></li>
+      			<li><a ui-sref="projects">Projects</a></li>
+      		</ul>
+      	</nav>
   		</header>
-        
 
 	    <div class="container">
 	        <!-- This is where your content will display -->
@@ -43,6 +38,7 @@
 	    </div>
 
 		<footer>
+      <hr>
 			<p>
 			Contact: <b>shl7<img src="http://www.washington.edu/computing/gifs/at.gif" alt='(at)'>uw.edu</b>
 			</p>

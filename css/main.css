@@ -1,3 +1,8 @@
+body
+{
+	background-color: #F5F5F5;
+}
+
 nav
 {
 	background-color: #181C22;
@@ -35,7 +40,7 @@ ul
 
 #nav a:hover
 {
-	color: #D87E28;
+	color: #808080;
 	text-decoration: none;
 }
 
@@ -60,3 +65,4 @@ ul
 {
 	width: 300px;
 }
+
